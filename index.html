@@ -7,14 +7,17 @@
       body {
         background-color: lightgrey;
         font-family: sans-serif;
+        background-image: url("images/background.jpg");
+        background-attachment: fixed;
       }
 
       .content {
         background-color: white;
-        height: 600px;
-        margin: 50px;
+/*         height: 600px; */
         padding: 20px;
-
+				max-width: 800px;
+        margin: auto;
+        margin-top: 50px;
       }
       
       .biopic{
@@ -27,6 +30,20 @@
 
       p {
         font-weight: light;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .gallery{
+        margin:auto;
+        text-align: center;
+        width: 600px;
+/*         background-color: grey; */
+      }
+      .gallery .desc{
+        margin:20px;
+        text-align: left;
+        margin-bottom: 100px;
+        
       }
     </style>
   </head>
@@ -48,6 +65,16 @@
       <p>
         Welcome to Michael Campagna's website, where you can find music and art, as well as purchase prints of original artworks.
       </p>
+      <div class="gallery">
+        <img src="images/darktv.jpg">
+        <div class="desc">
+          <i>"Title"</i> 2021
+        </div>
+        <img src="images/vaccum.jpg">
+        <div class="desc">
+          <i>"Title"</i> 2021
+        </div>
+      </div>
     </div>
 
   </body>
