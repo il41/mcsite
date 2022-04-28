@@ -1,0 +1,41 @@
+body {
+  background-color: lightgrey;
+  font-family: sans-serif;
+  background-image: url("images/background.jpg");
+  background-attachment: fixed;
+}
+
+.content {
+  background-color: white;
+/*         height: 600px; */
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.biopic{
+/*         position: absolute; */
+
+  top: 0px;
+  right: 10px;
+
+}
+
+p {
+  font-weight: light;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.gallery{
+  margin: auto;
+  text-align: center;
+  width: 600px;
+/*         background-color: grey; */
+}
+.gallery .desc{
+  margin: 20px;
+  text-align: left;
+  margin-bottom: 100px;
+
+}
