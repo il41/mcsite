@@ -2,30 +2,91 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Michael Campagna</title>
     <style>
+      @-webkit-keyframes bg-slide {
+        from { transform: translateY(0); }
+        to { transform: translateY(-100%); }
+      }
       body {
         background-color: lightgrey;
         font-family: sans-serif;
-        background-image: url("images/background.jpg");
+        background-image: url("images/backgroundtile.jpg");
         background-attachment: fixed;
+        /* position: relative; */
+        background-size: cover;
+        overscroll-behavior: ;
+        /* overflow: hidden; */
+        /* overflow-y: hidden; */
       }
+      .background, .background2{
+        width:100%;
+        height:200%;
+        z-index: -1;
+        background: url("images/backgroundtile.jpg") repeat-y;
+        background-size: cover;
+        position:absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
 
+        /* animation: bg-slide 10s linear infinite; */
+      }
+      .background2{
+        animation-delay: 5s;
+      }
+      @keyframes slide {
+        0% {
+          transform: translate3d(0, 0, 0);
+        }
+        100% {
+          transform: translate3d(0, -2304px, 0); /* The image width */
+        }
+      }
+      .slide-cont{
+          height:3000px;
+          width:100%;
+          overflow: hidden;
+          white-space: nowrap;
+          position: absolute;
+          top:0;
+          left:0;
+
+      }
+      .sliding-background{
+        /* float: left; */
+
+        mix-blend-mode: exclusion;
+        z-index: -1;
+        position:absolute;
+        top:0;
+        left:0;
+        background: url("images/backgroundtile.jpg") repeat-y;
+        background-repeat: repeat;
+        background-size: auto;
+        height: 5608px;
+        width: 100%;
+          animation: slide 60s linear infinite;
+        overflow: hidden;
+      }
       .content {
-        background-color: white;
+        background-color: #ffffffff;
 /*         height: 600px; */
         padding: 20px;
 				max-width: 800px;
         margin: auto;
         margin-top: 50px;
+        position:relative;
+        z-index: 10;
       }
-      
+
       .biopic{
 /*         position: absolute; */
-        
+
         top: 0px;
         right: 10px;
-        
+
       }
 
       p {
@@ -34,22 +95,45 @@
         padding-right: 20px;
       }
       .gallery{
-        margin:auto;
+        margin: auto;
         text-align: center;
-        width: 600px;
-/*         background-color: grey; */
+        max-width: 600px;
       }
       .gallery .desc{
-        margin:20px;
+        margin: 20px;
         text-align: left;
         margin-bottom: 100px;
-        
+
+      }
+      img{
+        /* width:50%; */
+        width: 100%;
+
+        display: block;
+      }
+      .watermark{
+        position: relative;
+        z-index: 1;
+        text-align:center;
+        margin:auto;
+        margin-top:420px;
+        font-size:17px;
+        /* background-color: #ffffff11; */
+        display:block;
+        width:240px;
+
+        border-radius: 20px;
+        padding:10px;
       }
     </style>
   </head>
   <body>
-
+    <div class="slide-cont">
+      <div class="sliding-background mouse" value="-50"/></div>
+    </div>
+    <!-- <div class="background2"></div> -->
     <div class="content">
+
       <h1>
         Michael Campagna
       </h1>
@@ -76,6 +160,24 @@
         </div>
       </div>
     </div>
-
+    <div class="watermark">website designed by <a href="ilai.link">ilai.link</a></div>
+    <!-- <script type="text/javascript">
+      // document.addEventListener("mousemove", parallax);
+      // function parallax(event) {
+      //   this.querySelectorAll(".mouse").forEach((shift) => {
+      //     const position = shift.getAttribute("value");
+      //     const x = (window.innerWidth - event.pageX * position) / 90;
+      //     const y = (window.innerHeight - event.pageY * position) / 90;
+      //
+      //     shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
+      //   });
+      // }
+    </script> -->
+    <!-- <script>
+    $(window).on("scroll", function () {
+      $(".background").css("bottom", $(window).scrollTop() * -1);
+    });
+    //https://dev.to/tbaveja/implement-reverse-scrolling-effect-on-webpage-58g0
+    </script> -->
   </body>
 </html>
