@@ -14,10 +14,10 @@
         font-family: sans-serif;
         background-image: url("images/backgroundtile.jpg");
         background-attachment: fixed;
-        /* position: relative; */
+/*         position: relative; */
         background-size: cover;
         overscroll-behavior: ;
-        /* overflow: hidden; */
+/*         overflow: hidden; */
         /* overflow-y: hidden; */
       }
       .background, .background2{
@@ -55,7 +55,7 @@
 
       }
       .sliding-background{
-        /* float: left; */
+/*         float: left; */
 
         mix-blend-mode: exclusion;
         z-index: -1;
@@ -75,9 +75,9 @@
 /*         mix-blend-mode: luminosity; */
 /*         height: 600px; */
         padding: 20px;
-				max-width: 800px;
+/* 				        max-width: 800px; */
         margin: auto;
-        margin-top: 50px;
+/*         margin-top: 50px; */
         position:relative;
         z-index: 10;
         
@@ -129,43 +129,60 @@
       .watermark{
         position: relative;
         z-index: 1;
-        text-align:center;
-        margin:auto;
-        margin-top:420px;
-        font-size:17px;
+        text-align: center;
+        margin: auto;
+        margin-top: 420px;
+        font-size: 17px;
         /* background-color: #ffffff11; */
-        display:block;
-        width:240px;
+        display: block;
+        width: 240px;
 
         border-radius: 20px;
-        padding:10px;
+        padding: 10px;
+      }
+      
+      .header {
+        text-align: center;
+        
+      }
+      .nav, .nav a, .nav a:visited{
+        color: black;
+        font-size: 20; 
+        margin-bottom: 20px;
+      }
+      .nav a{
+        background-color:color;
+        display: inline-block;
+        width:100px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .title{
+        font-size:100px;
+        font-weight: 100;
+        transform: scale(1, 1.3);
       }
     </style>
   </head>
   <body>
     <div class="slide-cont">
-      <div class="sliding-background mouse" value="-50"/></div>
+<!--       <div class="sliding-background mouse" value="-50"/></div> -->
     </div>
 <!--     <div class="background2"></div> -->
     <div class="content">
+    <div class="header">
+      <h1 class="title">MICHAEL CAMPAGNA</h1>
+      <div class = "nav">
+        <a href="art.html">ART</a> <a href="music.html">BIO</a> <a href="shop.html">CONTACT</a>
+      </div>
+    </div>
 
-      <h1>
-        Michael Campagna
-        
-      </h1>
-      <h2>
-      <p>
-
-<!--         <img class="biopic"src = "data:image/jpeg;base64,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"> -->
-      </p>
-        <a href="art.html">art</a> ••• <a href="music.html">music</a> ••• <a href="shop.html">shop</a>
-      </h2>
-      <p>
+<!--       <p>
       Welcome to Michael Campagna's website, where you can find music and art, as well as purchase prints of original artworks.
-      </p>
-      <p>
+      </p> -->
+<!--       <p>
        Born and raised in Buffalo, NY, veteran songwriter/guitarist Michael Campagna is a highly versatile Los Angeles-based musician and artist whose accomplishments have ranged from playing with the industrial band Psychic TV to co-writing songs for well-known R&B singers like Chaka Khan, Jennifer Holiday, and Maxine Nightingale. In addition to playing guitar with a mid-‘90s version of Psychic TV, Campagna recorded albums with a mid-‘90s project that was billed as Genesis P-Orridge & Splinter Test. Since 1998, Campagna has been leading an L.A.-based funk-rock band called the Average Johnsons, whose other members have included Mauex Luv on organ and vocals, Chet West on bass and Brian Head on drums. In addition to being the group's leader and guitarist, Campagna writes all of their material.
-      </p>
+      </p> -->
       <div class="gallery">
         <img src="images/darktv.jpg">
         <div class="desc">
