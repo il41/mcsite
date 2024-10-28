@@ -1,219 +1,53 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Michael Campagna</title>
-    <style>
-      @-webkit-keyframes bg-slide {
-        from { transform: translateY(0); }
-        to { transform: translateY(-100%); }
-      }
-      body {
-        background-color: lightgrey;
-        font-family: sans-serif;
-        background-image: url("images/backgroundtile.jpg");
-        background-attachment: fixed;
-/*         position: relative; */
-        background-size: cover;
-        overscroll-behavior: ;
-/*         overflow: hidden; */
-        /* overflow-y: hidden; */
-      }
-      .background, .background2{
-        width:100%;
-        height:200%;
-        z-index: -1;
-        background: url("images/backgroundtile.jpg") repeat-y;
-        background-size: cover;
-        position:absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
 
-        /* animation: bg-slide 10s linear infinite; */
-      }
-      .background2{
-        animation-delay: 5s;
-      }
-      @keyframes slide {
-        0% {
-          transform: translate3d(0, 0, 0);
-        }
-        100% {
-          transform: translate3d(0, -2304px, 0); /* The image width */
-        }
-      }
-      .slide-cont{
-          height:3000px;
-          width:100%;
-          overflow: hidden;
-          white-space: nowrap;
-          position: absolute;
-          top:0;
-          left:0;
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Michael Campagna</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
 
-      }
-      .sliding-background{
-/*         float: left; */
-
-        mix-blend-mode: exclusion;
-        z-index: -1;
-        position:absolute;
-        top:0;
-        left:0;
-        background: url("images/backgroundtile.jpg") repeat-y;
-        background-repeat: repeat;
-        background-size: auto;
-        height: 5608px;
-        width: 100%;
-          animation: slide 60s linear infinite;
-        overflow: hidden;
-      }
-      .content {
-        background-color: #ffffffe0;
-/*         mix-blend-mode: luminosity; */
-/*         height: 600px; */
-        padding: 20px;
-/* 				        max-width: 800px; */
-        margin: auto;
-/*         margin-top: 50px; */
-        position:relative;
-        z-index: 10;
-        
-      }
-
-      .biopic{
-/*         position: absolute; */
-
-        top: 0px;
-        right: 10px;
-        width:30%;
-        margin:auto;
-
-      }
-      .fade {
-        --mask: linear-gradient(to bottom, 
-            rgba(0,0,0, 1) 0,   rgba(0,0,0, 1) 40%, 
-            rgba(0,0,0, 0) 95%, rgba(0,0,0, 0) 0
-        ) 100% 50% / 100% 100% repeat-x;
-
-/*         border: 1px #d8d8d8 dashed; */
-/*         font: 2em/1.6em Arial; */
-        -webkit-mask: var(--mask); 
-        mask: var(--mask);
-      }
-
-      p {
-        font-weight: light;
-        padding-left: 20px;
-        padding-right: 20px;
-      }
-      .gallery{
-        margin: auto;
-        text-align: center;
-        max-width: 600px;
-      }
-      .gallery .desc{
-        margin: 20px;
-        text-align: left;
-        margin-bottom: 100px;
-
-      }
-      img{
-        /* width:50%; */
-        width: 100%;
-
-        display: block;
-      }
-      .watermark{
-        position: relative;
-        z-index: 1;
-        text-align: center;
-        margin: auto;
-        margin-top: 420px;
-        font-size: 17px;
-        /* background-color: #ffffff11; */
-        display: block;
-        width: 240px;
-
-        border-radius: 20px;
-        padding: 10px;
-      }
-      
-      .header {
-        text-align: center;
-        
-      }
-      .nav, .nav a, .nav a:visited{
-        color: black;
-        font-size: 20; 
-        margin-bottom: 20px;
-      }
-      .nav a{
-        background-color:color;
-        display: inline-block;
-        width:100px;
-        margin-left: 10px;
-        margin-right: 10px;
-      }
-      .title{
-        font-size:100px;
-        font-weight: 100;
-        transform: scale(1, 1.3);
-      }
-    </style>
-  </head>
-  <body>
-    <div class="slide-cont">
-<!--       <div class="sliding-background mouse" value="-50"/></div> -->
-    </div>
-<!--     <div class="background2"></div> -->
-    <div class="content">
+<body>
+  <div class="slide-cont">
+    <!-- <div class="sliding-background mouse" value="-50"/></div> -->
+  </div>
+    <!-- <div class="background2"></div> -->
+  <div class="content">
     <div class="header">
-      <h1 class="title">MICHAEL CAMPAGNA</h1>
-      <div class = "nav">
-        <a href="art.html">ART</a> <a href="music.html">BIO</a> <a href="shop.html">CONTACT</a>
+      <!-- <h1 class="title">MICHAEL CAMPAGNA</h1> -->
+      <div class="nav">
+        <div><a href="prints.html">PRINTS</a></div>
+        <div><a href="music.html">BIO</a></div>
+        <div><a href="shop.html">CONTACT</a></div>
       </div>
     </div>
 
-<!--       <p>
-      Welcome to Michael Campagna's website, where you can find music and art, as well as purchase prints of original artworks.
-      </p> -->
-<!--       <p>
-       Born and raised in Buffalo, NY, veteran songwriter/guitarist Michael Campagna is a highly versatile Los Angeles-based musician and artist whose accomplishments have ranged from playing with the industrial band Psychic TV to co-writing songs for well-known R&B singers like Chaka Khan, Jennifer Holiday, and Maxine Nightingale. In addition to playing guitar with a mid-‘90s version of Psychic TV, Campagna recorded albums with a mid-‘90s project that was billed as Genesis P-Orridge & Splinter Test. Since 1998, Campagna has been leading an L.A.-based funk-rock band called the Average Johnsons, whose other members have included Mauex Luv on organ and vocals, Chet West on bass and Brian Head on drums. In addition to being the group's leader and guitarist, Campagna writes all of their material.
-      </p> -->
-      <div class="gallery">
-        <img src="images/darktv.jpg">
-        <div class="desc">
-          <i>"Title"</i> 2021
-        </div>
-        <img src="images/vaccum.jpg">
-        <div class="desc">
-          <i>"Title"</i> 2021
-        </div>
-      </div>
-        <img class = "biopic" src= "https://image.jimcdn.com/app/cms/image/transf/dimension=640x10000:format=jpg/path/se80bcf7e1bbfb507/image/i2b8e8cc2fa87c260/version/1379481650/image.jpg">
-      <br><br><br><br>
+    <div class="painting-text">
+      MICHAEL CAMPAGNA
     </div>
-    <div class="watermark">website designed by <a href="ilai.link">ilai.link</a></div>
-    <!-- <script type="text/javascript">
-      // document.addEventListener("mousemove", parallax);
-      // function parallax(event) {
-      //   this.querySelectorAll(".mouse").forEach((shift) => {
-      //     const position = shift.getAttribute("value");
-      //     const x = (window.innerWidth - event.pageX * position) / 90;
-      //     const y = (window.innerHeight - event.pageY * position) / 90;
-      //
-      //     shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
-      //   });
-      // }
-    </script> -->
-    <!-- <script>
-    $(window).on("scroll", function () {
-      $(".background").css("bottom", $(window).scrollTop() * -1);
-    });
-    //https://dev.to/tbaveja/implement-reverse-scrolling-effect-on-webpage-58g0
-    </script> -->
-  </body>
+    
+    <div class="painting">
+      <img src="images/vaccum.jpg">
+    </div>
+    <br><br>
+      <!-- <p> Welcome to Michael Campagna's website, where you can find music and art, as well as purchase prints of original artworks.</p> -->
+      <!-- <p>Born and raised in Buffalo, NY, veteran songwriter/guitarist Michael Campagna is a highly versatile Los Angeles-based musician and artist whose accomplishments have ranged from playing with the industrial band Psychic TV to co-writing songs for well-known R&B singers like Chaka Khan, Jennifer Holiday, and Maxine Nightingale. In addition to playing guitar with a mid-‘90s version of Psychic TV, Campagna recorded albums with a mid-‘90s project that was billed as Genesis P-Orridge & Splinter Test. Since 1998, Campagna has been leading an L.A.-based funk-rock band called the Average Johnsons, whose other members have included Mauex Luv on organ and vocals, Chet West on bass and Brian Head on drums. In addition to being the group's leader and guitarist, Campagna writes all of their material.</p> -->
+    <!-- <div class="gallery">
+      <img src="images/darktv.jpg">
+      <div class="desc">
+        <i>"Title"</i> 2021
+      </div>
+      <img src="images/vaccum.jpg">
+      <div class="desc">
+        <i>"Title"</i> 2021
+      </div>
+    </div>
+    <img class="biopic"
+      src="https://image.jimcdn.com/app/cms/image/transf/dimension=640x10000:format=jpg/path/se80bcf7e1bbfb507/image/i2b8e8cc2fa87c260/version/1379481650/image.jpg">
+    <br><br><br><br>
+  </div> -->
+  <div class="watermark">website designed by <a href="ilai.link">ilai.link</a></div>
+</body>
+
 </html>
