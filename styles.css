@@ -246,9 +246,12 @@ img {
   text-align: center;
 }
 
-.gallery-item
-{
+.gallery-item{
   margin-bottom:100px;
+}
+
+.gallery-item img{
+  /* constrain height of img, maybe put in cont */
 }
 
 @media (max-width: 600px) {
