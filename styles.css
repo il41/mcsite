@@ -291,3 +291,8 @@ img {
 .grid-item p {
   /* margin: 5px 0; */
 }
+
+.hide
+{
+  display:none;
+}
