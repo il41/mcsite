@@ -262,3 +262,32 @@ img {
     font-size:40px;
   }
 }
+
+
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 30px;
+  justify-content: center;
+}
+.grid-item {
+  width: 450px; /* Adjust size as needed */
+  height: 450px; /* Ensures uniformity */
+  padding-left:10px;
+  padding-right:10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* line-height: 0px; */
+}
+.grid-item img {
+  width: 100%;
+  height: 300px; /* Fixed height for uniformity */
+  object-fit: contain; /* Ensures full image is visible */
+}
+.grid-item p {
+  /* margin: 5px 0; */
+}
