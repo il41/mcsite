@@ -266,8 +266,9 @@ img {
 
 
 .grid {
+  margin-top:40px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap:wrap;
   gap: 10px 30px;
   justify-content: center;
 }
@@ -295,4 +296,23 @@ img {
 .hide
 {
   display:none;
+}
+
+.toggleButton
+{
+  font-size: 14px;
+  /* transform: scale(1, 1.3); */
+  display:inline;
+  background-color:lightgrey;
+  padding:4px;
+  border-radius: 5px;
+  border: black outset 2px;
+}
+.toggleButton:active{
+  border: black inset 2px;
+  cursor:default;
+}
+.buttonDiv
+{
+  margin-bottom:50px;
 }
