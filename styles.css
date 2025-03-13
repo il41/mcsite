@@ -315,4 +315,5 @@ img {
 .buttonDiv
 {
   margin-bottom:50px;
+  user-select: none;
 }
